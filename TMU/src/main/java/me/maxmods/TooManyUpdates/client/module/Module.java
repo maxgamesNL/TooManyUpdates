@@ -12,9 +12,9 @@ public abstract class Module {
     }
     protected abstract void onEnable();
     protected abstract void onDisable();
-    protected abstract void onTick();
-    protected abstract void onRenderWorld();
-    protected abstract void onRenderGui();
+    public abstract void onTick();
+    public abstract void onRenderWorld();
+    public abstract void onRenderGui();
 
     public String getName() {
         return name;

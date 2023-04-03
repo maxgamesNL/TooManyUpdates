@@ -1,5 +1,8 @@
 package me.maxmods.TooManyUpdates.client.module;
 
+import me.maxmods.TooManyUpdates.client.module.categories.Dungeons;
+import me.maxmods.TooManyUpdates.client.module.categories.Farming;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +34,8 @@ public class ModuleManager {
     }
 
     void registerCategories(){
-
+        registerCategory(new Farming());
+        registerCategory(new Dungeons());
     }
 
     public static ModuleManager getInstance(){
